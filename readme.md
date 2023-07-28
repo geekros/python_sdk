@@ -20,8 +20,16 @@ pip3 install colorlog websocket-client==0.48.0 requests pyserial roslibpy empy c
 
 ## 📖 Development
 
+> 安装相关依赖
+>
+> Install the required dependencies.
+
 ```shell
 pip3 install twine setuptools wheel
+```
+
+```shell
+python3 setup.py sdist bdist_wheel
 ```
 
 ## 🌞 Development Team
