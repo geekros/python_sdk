@@ -36,6 +36,14 @@ pip3 install twine setuptools wheel
 python3 setup.py sdist bdist_wheel
 ```
 
+> 上传软件包到PyPI
+>
+> Upload software package to PyPI.
+
+```shell
+twine upload dist/*
+```
+
 ## 🌞 Development Team
 
 > GEEKROS
