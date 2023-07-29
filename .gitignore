@@ -2,3 +2,6 @@
 .DS*
 .git
 .vscode
+build
+dist
+robotchain.egg-info
