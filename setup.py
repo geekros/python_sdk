@@ -4,7 +4,7 @@ with open("readme.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setup(
-    name="robotchain",
+    name="robotchain_sdk",
     version="1.0.0",
     author="MakerYang",
     author_email="admin@wileho.com",
