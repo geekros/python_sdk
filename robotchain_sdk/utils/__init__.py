@@ -1,6 +1,6 @@
 import time
 import json
-from .loging.loging import Loging
+from .loging import Loging
 
 class Utils:
 
