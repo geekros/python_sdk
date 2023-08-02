@@ -28,3 +28,10 @@ class ROS:
             topic_data = roslibpy.Topic(self.client, topic, "std_msgs/String")
             topic_data.publish({"data": self._framework.utils.json.dumps(message)})
         return topic_data
+
+    def publish_string(self, topic, message):
+        topic_data = False
+        if self.client.is_connected:
+            topic_data = roslibpy.Topic(self.client, topic, "std_msgs/String")
+            topic_data.publish({"data": message})
+        return topic_data

@@ -1,6 +1,7 @@
 import sys
 import signal
 import app as app_file
+from .board import Board
 from .utils import Utils
 from .ros import ROS
 
@@ -9,6 +10,7 @@ class Init:
     def __init__(self):
         signal.signal(signal.SIGINT, self.sigint_handler)
         signal.signal(signal.SIGTERM, self.sigint_handler)
+        self.board = Board(self)
         self.utils = Utils(self)
         self.ros = ROS(self)
         self.setup()
