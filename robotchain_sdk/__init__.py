@@ -18,6 +18,10 @@ class Init:
     def setup(self):
         self.ros.client.run()
         self.utils.log.robot_start("Robot start.")
+        robot_start = "robot_start"
+        if robot_start in dir(app_file):
+            getattr(app_file, robot_start)(self)
+        self.sigint_handler(False, False)
 
     def sigint_handler(self, signum, frame):
         robot_exit = "robot_exit"
