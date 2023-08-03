@@ -20,6 +20,9 @@ class Init:
         self.utils.log.robot_start("Robot start.")
 
     def sigint_handler(self, signum, frame):
+        self.on_exit()
+
+    def on_exit(self):
         robot_exit = "robot_exit"
         if robot_exit in dir(app_file):
             getattr(app_file, robot_exit)(self)
