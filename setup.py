@@ -5,7 +5,7 @@ with open("readme.md", "r", encoding="utf-8") as fh:
 
 setup(
     name="robotchain_sdk",
-    version="1.0.5",
+    version="1.0.6",
     author="MakerYang",
     author_email="admin@wileho.com",
     description="Python development framework for robotchain.",
