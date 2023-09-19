@@ -15,7 +15,7 @@
 > Install the required dependencies.
 
 ```shell
-pip3 install robotchain-sdk colorlog websocket-client==0.48.0 requests pyserial roslibpy empy colcon-common-extensions pymongo tornado
+pip3 install robotchain colorlog websocket-client==0.48.0 requests pyserial roslibpy empy colcon-common-extensions pymongo tornado
 ```
 
 ## 📖 Using templates
@@ -24,7 +24,7 @@ pip3 install robotchain-sdk colorlog websocket-client==0.48.0 requests pyserial 
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-import robotchain_sdk as framework
+import robotchain as framework
 
 def robot_start(sdk):
     while True:
