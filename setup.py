@@ -4,14 +4,14 @@ with open("readme.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setup(
-    name="robotchain_sdk",
+    name="robotchain",
     version="1.0.6",
     author="MakerYang",
     author_email="admin@wileho.com",
     description="Python development framework for robotchain.",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/geekros/python_framework_sdk",
+    url="https://github.com/geekros/python_sdk",
     packages=find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
